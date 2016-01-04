@@ -1,0 +1,29 @@
+<!--//SGN-->
+<html ng-app="groupRoom">
+    <head>
+        <title>GroupRoom</title>
+        <script src="bower_components/angular/angular.js"></script>
+        <link rel="stylesheet" href="assets/css/style.css"/>
+    </head>
+<body>
+    <div ng-controller="indexController as ctrl">
+        <div class="container">
+            <div class="leftpane">
+                <span class="menu leftpane-common"></span>
+                <span class="groupIcon leftpane-common"></span>
+            </div>
+            <div class="rightcontainer">
+               <div class="toolbar"></div>
+                <div class="ui-container">
+                    <activity-cell area="Area 1" bgcolor="#ffffff"></activity-cell>
+                    <activity-cell area="Area 2" bgcolor="#f8f8f8"></activity-cell>
+                    <activity-cell area="Area 3" bgcolor="#ffffff"></activity-cell>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="apps/index.js"></script>
+    <script src="apps/activity/directives/activity.js"></script>
+    <script src="apps/activity/service/trackState.js"></script>
+</body>
+</html>
